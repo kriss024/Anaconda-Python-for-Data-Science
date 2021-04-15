@@ -21,7 +21,7 @@ RUN pip install psycopg2-binary \
 
 RUN conda install -y -c conda-forge dill \
 && conda install -y -c conda-forge python-graphviz \
-&& conda install -c conda-forge pandas-profiling \
+&& conda install -y -c conda-forge pandas-profiling \
 && conda install -y -c conda-forge shap \
 && conda install -y -c conda-forge imbalanced-learn=0.5.0 \
 && conda install -y -c conda-forge category_encoders \
