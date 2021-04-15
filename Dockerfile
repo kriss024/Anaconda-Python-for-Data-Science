@@ -14,11 +14,14 @@ RUN conda update conda -y \
 
 # Installing additional libraries
 RUN pip install psycopg2-binary \
+&& pip install --upgrade gensim \
+&& pip install eli5 \
 && pip install tensorflow \
 && pip install keras
 
 RUN conda install -y -c conda-forge dill \
 && conda install -y -c conda-forge python-graphviz \
+&& conda install -c conda-forge pandas-profiling \
 && conda install -y -c conda-forge shap \
 && conda install -y -c conda-forge imbalanced-learn=0.5.0 \
 && conda install -y -c conda-forge category_encoders \
