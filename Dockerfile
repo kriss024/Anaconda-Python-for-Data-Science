@@ -2,6 +2,7 @@ FROM continuumio/anaconda3:latest
 
 LABEL maintainer="Krzysztof Bruszewski <krzysztof.bruszewski@gmail.com>"
 
+# OS installing needed packages
 RUN apt update -y \
 && apt -y install graphviz \
 && apt -y install ffmpeg libsm6 libxext6
@@ -37,6 +38,14 @@ RUN conda install -y -c conda-forge dill \
 && conda install -y -c conda-forge py-xgboost \
 && conda install -y -c conda-forge lightgbm \
 && conda install -y -c conda-forge geopy
+
+# Extension for Jupyter Notebooks
+RUN pip install jupyter_contrib_nbextensions \
+&& jupyter contrib nbextension install --system \
+&& pip install jupyter_nbextensions_configurator \
+&& jupyter nbextensions_configurator enable --system \
+&& pip install yapf \
+&& pip install nbconvert==5.6.1
 
 # Creating a directory for Jupyter Notebooks
 RUN mkdir -p /home/notebooks

@@ -9,7 +9,7 @@ Navigate to [http://127.0.0.1:8888/](http://127.0.0.1:8888/) in your web browser
 
 ## Content
 - [x] Anaconda Python 3.8.8
-- [x] Jupyter Notebook (6.3.0)
+- [x] Jupyter Notebook (6.3.0) with ```jupyter_contrib_nbextensions``` notebook extension
 - [x] NumPy (1.19.2)
 - [x] Pandas (1.2.3)
 - [x] Statsmodels (0.12.2)
