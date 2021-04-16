@@ -44,6 +44,7 @@ RUN pip install jupyter_contrib_nbextensions \
 && jupyter contrib nbextension install --system \
 && pip install jupyter_nbextensions_configurator \
 && jupyter nbextensions_configurator enable --system \
+&& jupyter nbextension enable hinterland/hinterland \
 && pip install yapf \
 && pip install nbconvert==5.6.1
 
