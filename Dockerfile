@@ -2,7 +2,7 @@ FROM continuumio/anaconda3:latest
 
 LABEL maintainer="Krzysztof Bruszewski <krzysztof.bruszewski@gmail.com>"
 
-# OS installing needed packages
+# Installing packages for OS
 RUN apt update -y \
 && apt -y install graphviz \
 && apt -y install ffmpeg libsm6 libxext6
@@ -37,6 +37,7 @@ RUN conda install -y -c conda-forge dill \
 && conda install -y -c conda-forge plotly \
 && conda install -y -c conda-forge py-xgboost \
 && conda install -y -c conda-forge lightgbm \
+&& conda install -y -c conda-forge theano \
 && conda install -y -c conda-forge geopy
 
 # Extension for Jupyter Notebooks

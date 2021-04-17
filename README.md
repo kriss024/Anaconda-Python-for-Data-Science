@@ -9,22 +9,31 @@ Navigate to [http://127.0.0.1:8888/](http://127.0.0.1:8888/) in your web browser
 
 ## Content
 - [x] Anaconda Python 3.8.8
-- [x] Jupyter Notebook (6.3.0) with ```jupyter_contrib_nbextensions``` notebook extension
-- [x] NumPy (1.19.2)
-- [x] Pandas (1.2.3)
-- [x] Statsmodels (0.12.2)
-- [x] scikit-learn (0.24.1)
-- [x] SciPy (1.6.2)
-- [x] seaborn (0.11.1)
-- [x] SHAP (0.37.0)
-- [x] Pingouin (0.3.10)
-- [x] SQLAlchemy (1.4.5) + psycopg2 (2.8.6)
-- [x] TensorFlow 2 (2.4.1)
-- [x] Keras (2.4.3)
-- [x] Bokeh (2.3.0)
-- [x] Plotly (4.14.3)
-- [x] OpenCV (4.5.1)
-- [x] XGBoost (1.3.3)
-- [x] LightGBM (3.2.0)
-- [x] spaCy (3.0.5)
-- [x] GeoPy (2.1.0)
+- [x] Jupyter Notebook
+- [x] Beautiful Soup
+- [x] Bokeh
+- [x] GeoPy
+- [x] Category Encoders
+- [x] Dask
+- [x] ELI5
+- [x] Flask
+- [x] imageio
+- [x] jupyter-contrib-nbextensions
+- [x] Keras
+- [x] NumPy
+- [x] OpenCV
+- [x] Pandas
+- [x] Pingouin
+- [x] Plotly
+- [x] psycopg2
+- [x] scikit-learn
+- [x] SciPy
+- [x] seaborn
+- [x] SHAP
+- [x] Statsmodels
+- [x] spaCy
+- [x] SQLAlchemy
+- [x] Theano
+- [x] TensorFlow 2
+- [x] XGBoost
+- [x] LightGBM
