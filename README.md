@@ -5,6 +5,11 @@ To launch the container, run the following command:
 ```
 docker run -it --name anaconda3 -p 8888:8888 -v C:\Work:/home/notebooks kriss024/anaconda-python-for-data-science
 ```
+optional in WSL2:
+```
+docker run -it --name anaconda3 -p 8888:8888 -v /mnt/c/work:/home/notebooks kriss024/anaconda-python-for-data-science
+```
+
 Navigate to [http://127.0.0.1:8888/](http://127.0.0.1:8888/) in your web browser to run the notebooks
 
 ## Content
