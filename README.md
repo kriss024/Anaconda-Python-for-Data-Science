@@ -1,4 +1,4 @@
-# Anaconda Python 3.8.8 with Jupyter notebook for Data Science uses
+# Anaconda Python 3.8.8 with Jupyter notebook for Data Science use
 
 ## How to Use this Image
 To launch the container, run the following command:
