@@ -2,7 +2,7 @@ FROM continuumio/anaconda3:latest
 
 LABEL maintainer="Krzysztof Bruszewski <krzysztof.bruszewski@gmail.com>"
 
-# Installing packages for OS
+# Installing packages for operating system
 RUN apt update -y \
 && apt -y install graphviz \
 && apt -y install ffmpeg libsm6 libxext6
@@ -13,7 +13,7 @@ RUN conda update conda -y \
 && conda update --all -y \
 && python -m pip install --upgrade pip
 
-# Installing additional libraries
+# Installing additional libraries for Python
 RUN pip install psycopg2-binary \
 && pip install --upgrade gensim \
 && pip install eli5 \
@@ -40,7 +40,7 @@ RUN conda install -y -c conda-forge dill \
 && conda install -y -c conda-forge theano \
 && conda install -y -c conda-forge geopy
 
-# Extension for Jupyter Notebooks
+# Installing extensions for Jupyter Notebooks
 RUN pip install jupyter_contrib_nbextensions \
 && jupyter contrib nbextension install --system \
 && pip install jupyter_nbextensions_configurator \
@@ -52,6 +52,7 @@ RUN pip install jupyter_contrib_nbextensions \
 # Creating a directory for Jupyter Notebooks
 RUN mkdir -p /home/notebooks
 
+# Setting working directory
 WORKDIR /home/notebooks
 
 # Jupyter listens port: 8888
