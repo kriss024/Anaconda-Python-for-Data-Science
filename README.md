@@ -5,7 +5,7 @@ To launch the container, run the following command:
 ```
 docker run -it --name anaconda3 -p 8888:8888 -v C:\Work:/home/notebooks kriss024/anaconda-python-for-data-science
 ```
-optional in WSL2:
+e.g. in WSL2:
 ```
 docker run -it --name anaconda3 -p 8888:8888 -v /home/<user name>/notebooks:/home/notebooks kriss024/anaconda-python-for-data-science
 ```
