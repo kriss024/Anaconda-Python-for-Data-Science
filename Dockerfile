@@ -4,6 +4,7 @@ LABEL maintainer="Krzysztof Bruszewski <krzysztof.bruszewski@gmail.com>"
 
 # Installing packages for operating system
 RUN apt update -y \
+&& apt -y install build-essential \
 && apt -y install graphviz \
 && apt -y install ffmpeg libsm6 libxext6
 
