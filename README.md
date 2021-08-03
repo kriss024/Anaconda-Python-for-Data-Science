@@ -1,16 +1,17 @@
-# Anaconda Python 3.8.8 with Jupyter notebook for Data Science use
+# Anaconda Python 3.8.8 for Data Science use
 
 ## How to Use this Image
 To launch the container, run the following command:
+in Windows:
 ```
-docker run -it --name anaconda3 -p 8888:8888 -v C:\Work:/home/notebooks kriss024/anaconda-python-for-data-science
+docker run -it --name python3 -p 8888:8888 -v C:\Work:/home/notebooks kriss024/anaconda-python-for-data-science
 ```
-e.g. in Windows WSL:
+in Windows WSL or Linux:
 ```
-docker run -it --name anaconda3 -p 8888:8888 -v "$PWD":/home/notebooks kriss024/anaconda-python-for-data-science
+docker run -it --name python3 -p 8888:8888 -v "$PWD":/home/notebooks kriss024/anaconda-python-for-data-science
 ```
 
-Navigate to [http://127.0.0.1:8888/](http://127.0.0.1:8888/) in your web browser to run the notebooks
+Navigate to [http://127.0.0.1:8888/](http://127.0.0.1:8888/) in your web browser to run the jupyter notebook
 
 ## Content
 - [x] Anaconda Python 3.8.8
@@ -23,6 +24,7 @@ Navigate to [http://127.0.0.1:8888/](http://127.0.0.1:8888/) in your web browser
 - [x] ELI5
 - [x] Flask
 - [x] imageio
+- [x] Joblib
 - [x] Keras
 - [x] NumPy
 - [x] OpenCV

@@ -38,7 +38,8 @@ RUN conda install -y -c conda-forge dill \
 && conda install -y -c conda-forge py-xgboost \
 && conda install -y -c conda-forge lightgbm \
 && conda install -y -c conda-forge theano \
-&& conda install -y -c conda-forge geopy
+&& conda install -y -c conda-forge geopy \
+&& conda install -y -c anaconda joblib
 
 # Installing extensions for Jupyter Notebooks
 RUN pip install jupyter_contrib_nbextensions \
