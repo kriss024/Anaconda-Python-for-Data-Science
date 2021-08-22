@@ -1,14 +1,14 @@
 # Anaconda Python for Data Science
-## Python 3.8.8 with TensorFlow 2.6, XGBoost, LightGBM, OpenCV libraries
+### Python 3.8.8 with TensorFlow 2.6, XGBoost, LightGBM, OpenCV libraries
 
 ## How to Use this Image
 To launch the container, run the following command:<br/>
 in Windows:
-```
+```cmd
 docker run -it --name python3 -p 8888:8888 -v C:\Work:/home/notebooks kriss024/anaconda-python-for-data-science
 ```
 in Windows WSL or Linux:
-```
+```bash
 docker run -it --name python3 -p 8888:8888 -v "$PWD":/home/notebooks kriss024/anaconda-python-for-data-science
 ```
 
