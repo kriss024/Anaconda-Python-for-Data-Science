@@ -18,6 +18,7 @@ RUN conda update conda -y \
 RUN pip install psycopg2-binary \
 && pip install --upgrade gensim \
 && pip install eli5 \
+&& pip install hpsklearn \
 && pip install https://storage.googleapis.com/tensorflow/linux/cpu/tensorflow_cpu-2.6.0-cp38-cp38-manylinux2010_x86_64.whl \
 && pip install keras
 
@@ -39,6 +40,7 @@ RUN conda install -y -c conda-forge dill \
 && conda install -y -c conda-forge lightgbm \
 && conda install -y -c conda-forge theano \
 && conda install -y -c conda-forge geopy \
+&& conda install -y -c conda-forge hyperopt \
 && conda install -y -c anaconda joblib
 
 # Installing extensions for Jupyter Notebook
@@ -56,7 +58,7 @@ RUN mkdir -p /home/notebooks
 # Setting working directory
 WORKDIR /home/notebooks
 
-# Jupyter and Tensorboard ports
+# Jupyter Notebook and Tensorboard ports
 EXPOSE 8888 6006
 
 # Running Jupyter Notebook

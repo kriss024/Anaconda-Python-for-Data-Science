@@ -1,5 +1,5 @@
 # Anaconda Python for Data Science
-### Python 3.8.8 with TensorFlow 2.6, XGBoost, LightGBM, OpenCV libraries
+### Python 3.8.8 with TensorFlow 2, XGBoost, LightGBM, OpenCV libraries
 
 ## How to Use this Image
 To launch the container, run the following command:<br/>
@@ -24,6 +24,8 @@ Navigate to [http://127.0.0.1:8888/](http://127.0.0.1:8888/) in your web browser
 - [x] Dask
 - [x] ELI5
 - [x] Flask
+- [x] Hyperopt
+- [x] Hyperopt-sklearn
 - [x] imageio
 - [x] Joblib
 - [x] Keras
